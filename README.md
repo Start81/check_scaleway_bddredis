@@ -23,7 +23,7 @@ General Public Licence (see http://www.fsf.org/licensing/licenses/gpl.txt).
 
 check_scaleway_bddredis1.pl is a Nagios check that uses Scaleway s REST API to get redis bdd metrics
 
-Usage: check_scaleway_bddredis1.pl  -T <Token> -z <Scaleway zone> -N <cluster name> | -i <id> | -L [-m <Metric_Name> -w <threshold> -c <threshold> ]
+Usage: check_scaleway_bddredis.pl  -T <Token> -z <Scaleway zone> -N <cluster name> | -i <id> | -L [-m <Metric_Name> -w <threshold> -c <threshold> ]
 
  -?, --usage
    Print usage information
