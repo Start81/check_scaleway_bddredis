@@ -1,6 +1,6 @@
 ## check_scaleway_bddredis
 
-This is a Nagios check that use Scalways's REST API to check if the Redis bdd is up and get metric [ALL][PERL]
+This is a Nagios check that use Scaleways's REST API to check if the Redis bdd is up and get metric [ALL][PERL]
 https://www.scaleway.com/en/developers/api/managed-database-redis/
 ### prerequisites
 
@@ -21,7 +21,7 @@ This nagios plugin is free software, and comes with ABSOLUTELY NO WARRANTY.
 It may be used, redistributed and/or modified under the terms of the GNU
 General Public Licence (see http://www.fsf.org/licensing/licenses/gpl.txt).
 
-check_scaleway_bddredis1.pl is a Nagios check that uses Scaleway s REST API to get redis bdd metrics
+check_scaleway_bddredis.pl is a Nagios check that uses Scaleway s REST API to get redis bdd metrics
 
 Usage: check_scaleway_bddredis.pl  -T <Token> -z <Scaleway zone> -N <cluster name> | -i <id> | -L [-m <Metric_Name> -w <threshold> -c <threshold> ]
 
@@ -62,12 +62,12 @@ sample :
 
 ```bash
 #list all database 
-./check-scaleway-bddredis.pl -T <Token> -z fr-par-2 -L
+./check_scaleway_bddredis.pl -T <Token> -z fr-par-2 -L
 #BDD sate
-./check-scaleway-bddredis.pl -T <Token> -z fr-par-2 -N <InstanceName>
+./check_scaleway_bddredis.pl -T <Token> -z fr-par-2 -N <InstanceName>
 #get a metric
-./check-scaleway-bddredis.pl -T <Token> -z fr-par-2 -N <InstanceName> -m cpu_usage_percent
-./check-scaleway-bddredis.pl -T <Token> -z fr-par-2 -i <Id> -m cpu_usage_percent
+./check_scaleway_bddredis.pl -T <Token> -z fr-par-2 -N <InstanceName> -m cpu_usage_percent
+./check_scaleway_bddredis.pl -T <Token> -z fr-par-2 -i <Id> -m cpu_usage_percent
 ```
 
 Retour des commandes :
