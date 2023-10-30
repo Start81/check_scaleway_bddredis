@@ -70,7 +70,7 @@ sample :
 ./check_scaleway_bddredis.pl -T <Token> -z fr-par-2 -i <Id> -m cpu_usage_percent
 ```
 
-Retour des commandes :
+you may get :
 
 ```bash
 #list all database
